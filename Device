@@ -1,0 +1,15 @@
+namespace LabPolymorphism;
+
+public abstract class Device
+{
+    protected string name;
+    protected int powerUsage; // споживання енергії (Вт)
+
+    public Device(string name, int powerUsage)
+    {
+        this.name = name;
+        this.powerUsage = powerUsage;
+    }
+
+    public abstract void TurnOn();
+}
