@@ -1,0 +1,12 @@
+namespace LabPolymorphism;
+
+public class Laptop : Device
+{
+    public Laptop(string name, int powerUsage)
+        : base(name, powerUsage) { }
+
+    public override void TurnOn()
+    {
+        Console.WriteLine($"Ноутбук {name} запускається. Споживання енергії: {powerUsage} Вт.");
+    }
+}
