@@ -1,0 +1,12 @@
+namespace LabPolymorphism;
+
+public class Smartphone : Device
+{
+    public Smartphone(string name, int powerUsage)
+        : base(name, powerUsage) { }
+
+    public override void TurnOn()
+    {
+        Console.WriteLine($"Смартфон {name} увімкнено. Споживання енергії: {powerUsage} Вт.");
+    }
+}
