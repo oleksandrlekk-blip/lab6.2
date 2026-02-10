@@ -1,0 +1,12 @@
+namespace LabPolymorphism;
+
+public class Tablet : Device
+{
+    public Tablet(string name, int powerUsage)
+        : base(name, powerUsage) { }
+
+    public override void TurnOn()
+    {
+        Console.WriteLine($"Планшет {name} активовано. Споживання енергії: {powerUsage} Вт.");
+    }
+}
